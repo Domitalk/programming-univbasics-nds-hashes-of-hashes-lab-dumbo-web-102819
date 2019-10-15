@@ -4,31 +4,32 @@
 #
 # The tests will guide your construction.
 #
-# PORTION_1 = {
-#   label: "Kingdom",
-#   sub_category: {
-#     label: "Phylum",
-#     sub_category: {
-#       label: "Class"
-#     }
-#   }
-# }
-#
-# PORTION_2 = {
-#   label: "Order"
-# }
-#
-# PORTION_3 = {
-#   label: "Family",
-#   sub_category: {
-#     label: "Genus",
-#   }
-# }
-#
-# PORTION_4 = {
-#   label: "Species",
-#   sub_category: nil
-# }
+ PORTION_1 = {
+   label: "Kingdom",
+   sub_category: {
+     label: "Phylum",
+     sub_category: {
+       label: "Class"
+     }
+   }
+ }
+
+ PORTION_2 = {
+   label: "Order"
+ }
+
+ PORTION_3 = {
+   label: "Family",
+   sub_category: {
+     label: "Genus",
+   }
+ }
+
+ PORTION_4 = {
+   label: "Species",
+   sub_category: nil
+ }
+
 new_hoh = [
   {
    label: "Kingdom",
@@ -56,7 +57,13 @@ new_hoh = [
 
 
 def naming_system
-  new_method_hoh = {}
+  new_method_hoh = {
+    PORTION_1
+  }
+  new_method_hoh[:subcategory][:subcategory][:subcategory] = PORTION_2
+  new_method_hoh[:subcategory][:subcategory][:subcategory][:subcategory] = PORTION_3
+  new_method_hoh[:subcategory][:subcategory][:subcategory][:subcategory][:subcategory][:subcategory] = PORTION_4
+  new_method_hoh
   # Remember:
   #  Kingdom
   #  Phylum
