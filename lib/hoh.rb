@@ -58,9 +58,9 @@ new_hoh = [
 
 def naming_system
   new_method_hoh = PORTION_1
-  new_method_hoh[:subcategory][:subcategory][:subcategory] = PORTION_2
-  new_method_hoh[:subcategory][:subcategory][:subcategory][:subcategory] = PORTION_3
-  new_method_hoh[:subcategory][:subcategory][:subcategory][:subcategory][:subcategory][:subcategory] = PORTION_4
+  new_method_hoh[:sub_category][:sub_category][:sub_category] = PORTION_2
+  new_method_hoh[:sub_category][:sub_category][:sub_category][:sub_category] = PORTION_3
+  new_method_hoh[:sub_category][:sub_category][:sub_category][:sub_category][:sub_category][:sub_category] = PORTION_4
   new_method_hoh
   # Remember:
   #  Kingdom
