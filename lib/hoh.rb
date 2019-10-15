@@ -56,7 +56,7 @@ new_hoh = [
 
 
 def naming_system
-  new_method_hoh
+  new_method_hoh = {}
   # Remember:
   #  Kingdom
   #  Phylum
