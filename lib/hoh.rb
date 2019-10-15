@@ -58,7 +58,7 @@ new_hoh = [
 
 def naming_system
   new_method_hoh = Hash.new
-  new_method_hoh[0] = PORTION_1
+  new_method_hoh = PORTION_1
   new_method_hoh[:subcategory][:subcategory][:subcategory] = PORTION_2
   new_method_hoh[:subcategory][:subcategory][:subcategory][:subcategory] = PORTION_3
   new_method_hoh[:subcategory][:subcategory][:subcategory][:subcategory][:subcategory][:subcategory] = PORTION_4
